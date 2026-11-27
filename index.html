@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillForge – Master New Skills Online</title>
+  <meta name="description" content="Learn in-demand skills with expert-led online courses. Programming, design, business, data science and more.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><div class="logo-icon">🎓</div> SkillForge</a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="categories.html">Categories</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search-box"><input type="search" placeholder="Search courses..." aria-label="Search"><button type="submit">🔍</button></form>
+        <button class="cart-btn" onclick="location.href='cart.html'" title="Cart">🛒 <span class="cart-count">0</span></button>
+        <button class="user-btn" title="Account">👤</button>
+        <button class="mobile-menu-btn">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Learn Skills That<br>Shape Your Future</h1>
+        <p>Join 250,000+ learners mastering high-demand skills with project-based courses from industry experts. Start free or unlock full access.</p>
+        <div class="hero-btns">
+          <a href="courses.html" class="btn btn-primary">Explore Courses →</a>
+          <a href="about.html" class="btn btn-secondary">Why SkillForge</a>
+        </div>
+      </div>
+      <div style="font-size:7rem;text-align:center;">🚀</div>
+    </section>
+
+    <section class="features">
+      <div class="feature-card"><div class="feature-icon">👨‍🏫</div><h3>Expert Instructors</h3><p>Learn from practitioners working at top companies.</p></div>
+      <div class="feature-card"><div class="feature-icon">🛠️</div><h3>Project-Based</h3><p>Build real portfolio pieces, not just watch videos.</p></div>
+      <div class="feature-card"><div class="feature-icon">📜</div><h3>Certificates</h3><p>Earn verifiable certificates you can share on LinkedIn.</p></div>
+      <div class="feature-card"><div class="feature-icon">💬</div><h3>Community</h3><p>Get feedback and network with fellow learners.</p></div>
+    </section>
+
+    <h2 class="section-title"><span>📚</span> Popular Categories</h2>
+    <div class="categories">
+      <button class="category-chip active" data-category="all">All</button>
+      <button class="category-chip" data-category="programming">Programming</button>
+      <button class="category-chip" data-category="design">Design</button>
+      <button class="category-chip" data-category="business">Business</button>
+      <button class="category-chip" data-category="data">Data Science</button>
+      <button class="category-chip" data-category="marketing">Marketing</button>
+      <button class="category-chip" data-category="languages">Languages</button>
+    </div>
+
+    <h2 class="section-title"><span>⭐</span> Featured Courses</h2>
+    <div class="product-grid">
+      <div class="product-card" data-category="programming">
+        <div class="product-img">💻<span class="product-badge">Bestseller</span></div>
+        <div class="product-info">
+          <div class="product-category">Programming</div>
+          <h3 class="product-title">Complete Python Bootcamp 2026</h3>
+          <p class="product-desc">From basics to advanced: OOP, data structures, web apps and automation.</p>
+          <div class="product-meta"><span class="product-price">$49.99</span><span class="product-rating">★ 4.9</span></div>
+          <div class="product-actions">
+            <a href="courses/course-1.html" class="btn btn-secondary btn-sm">View</a>
+            <button class="btn btn-primary btn-sm" data-add-to-cart data-id="1" data-name="Complete Python Bootcamp 2026" data-price="49.99" data-emoji="💻">Enroll</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" data-category="design">
+        <div class="product-img">🎨</div>
+        <div class="product-info">
+          <div class="product-category">Design</div>
+          <h3 class="product-title">UI/UX Design Masterclass</h3>
+          <p class="product-desc">Figma, user research, prototyping and design systems.</p>
+          <div class="product-meta"><span class="product-price">$59.99</span><span class="product-rating">★ 4.8</span></div>
+          <div class="product-actions">
+            <a href="courses/course-2.html" class="btn btn-secondary btn-sm">View</a>
+            <button class="btn btn-primary btn-sm" data-add-to-cart data-id="2" data-name="UI/UX Design Masterclass" data-price="59.99" data-emoji="🎨">Enroll</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" data-category="data">
+        <div class="product-img">📊</div>
+        <div class="product-info">
+          <div class="product-category">Data Science</div>
+          <h3 class="product-title">Data Analysis with Python</h3>
+          <p class="product-desc">Pandas, visualization, statistics and real datasets.</p>
+          <div class="product-meta"><span class="product-price">$54.99</span><span class="product-rating">★ 4.7</span></div>
+          <div class="product-actions">
+            <a href="courses/course-3.html" class="btn btn-secondary btn-sm">View</a>
+            <button class="btn btn-primary btn-sm" data-add-to-cart data-id="3" data-name="Data Analysis with Python" data-price="54.99" data-emoji="📊">Enroll</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" data-category="business">
+        <div class="product-img">📈</div>
+        <div class="product-info">
+          <div class="product-category">Business</div>
+          <h3 class="product-title">Product Management Essentials</h3>
+          <p class="product-desc">Roadmaps, prioritization, stakeholder management.</p>
+          <div class="product-meta"><span class="product-price">$44.99</span><span class="product-rating">★ 4.8</span></div>
+          <div class="product-actions">
+            <a href="courses/course-4.html" class="btn btn-secondary btn-sm">View</a>
+            <button class="btn btn-primary btn-sm" data-add-to-cart data-id="4" data-name="Product Management Essentials" data-price="44.99" data-emoji="📈">Enroll</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mb-3"><a href="courses.html" class="btn btn-primary">View All Courses →</a></div>
+
+    <section style="background:linear-gradient(135deg,#0d47a1,#1565c0);color:white;border-radius:12px;padding:2.25rem;margin:2.25rem 0;text-align:center;">
+      <h2 style="color:white;margin-bottom:1.35rem;">Trusted by Learners Worldwide</h2>
+      <div class="stats-grid" style="max-width:750px;margin:0 auto;">
+        <div><div style="font-size:2.25rem;font-weight:700;">250k+</div><div>Students</div></div>
+        <div><div style="font-size:2.25rem;font-weight:700;">1,200+</div><div>Courses</div></div>
+        <div><div style="font-size:2.25rem;font-weight:700;">4.8</div><div>Avg Rating</div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><h4>🎓 SkillForge</h4><p>Empowering professionals with practical skills for the modern workplace.</p></div>
+      <div><h4>Learn</h4><a href="courses.html">All Courses</a><a href="categories.html">Categories</a></div>
+      <div><h4>Company</h4><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div><h4>Support</h4><a href="pages/faq.html">FAQ</a><a href="pages/privacy.html">Privacy</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 SkillForge Academy. All rights reserved.</div>
+  </footer>
+
+  <div class="modal-overlay" id="auth-modal">
+    <div class="modal">
+      <button class="modal-close">×</button>
+      <h2>Welcome to SkillForge</h2>
+      <p class="mb-2" style="color:#546e7a;">Sign in to track progress and save courses.</p>
+      <div class="form-group"><label>Email</label><input type="email" class="form-control" placeholder="you@example.com"></div>
+      <div class="form-group"><label>Password</label><input type="password" class="form-control" placeholder="••••••••"></div>
+      <button class="btn btn-primary btn-block mb-2" data-auth="login">Sign In</button>
+      <button class="btn btn-secondary btn-block" data-auth="register">Create Account</button>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
